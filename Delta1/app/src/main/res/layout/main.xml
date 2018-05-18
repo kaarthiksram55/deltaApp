@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/none_as_of_now"
+        android:inputType="text"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/l1"
+        android:layout_width="272dp"
+        android:layout_height="465dp"
+        android:layout_below="@+id/t1"
+        android:textFilterEnabled="true" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="119dp"
+        android:onClick="listAdd"
+        android:text="@string/button" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/b1"
+        android:layout_marginBottom="92dp"
+        android:onClick="reset"
+        android:text="reset" />
+
+
+</RelativeLayout>
